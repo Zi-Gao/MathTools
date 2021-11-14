@@ -1,7 +1,7 @@
 /*
  * @Author: Zi_Gao
  * @Date: 2021-11-13 20:24:47
- * @LastEditTime: 2021-11-14 11:03:03
+ * @LastEditTime: 2021-11-14 11:34:46
  * @LastEditors: Zi_Gao
  * @Description: command-line interface
  * @FilePath: /MathTools/commandLineInterface.java
@@ -13,7 +13,8 @@ public class commandLineInterface {
         while(true) {
             System.out.println("-----------Tool list-----------");
             System.out.println("|1.greatest common divisor    |");
-            System.out.println("|2.exit                       |");
+            System.out.println("|2.least common multiple      |");
+            System.out.println("|3.exit                       |");
             System.out.println("-------------------------------");
             System.out.print("Please input your choice: ");
             choice = input.inputInt();
@@ -21,6 +22,9 @@ public class commandLineInterface {
                 greatestCommonDivisorCLI.main(args);
             }
             else if(choice == 2){
+                leastCommonMultipleCLI.main(args);
+            }
+            else if(choice == 3){
                 System.out.println("Bye!");
                 break;
             }
