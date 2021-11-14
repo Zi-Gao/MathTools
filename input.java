@@ -2,13 +2,18 @@ import java.util.Scanner;
 /*
  * @Author: Zi_Gao
  * @Date: 2021-11-14 10:42:06
- * @LastEditTime: 2021-11-14 10:58:40
+ * @LastEditTime: 2021-11-14 11:08:54
  * @LastEditors: Zi_Gao
  * @Description: input
  * @FilePath: /MathTools/input.java
  * @LICENSE: MIT License
  */
 public class input {
+    /**
+     * @description: Int input control
+     * @param {}
+     * @return {int}
+     */
     public static int inputInt() {
         Scanner sc = new Scanner(System.in);
         try{
@@ -18,6 +23,11 @@ public class input {
             return inputInt();
         }
     }
+    /**
+     * @description: Double input control
+     * @param {}
+     * @return {double}
+     */
     public static double inputDouble() {
         Scanner sc = new Scanner(System.in);
         try{
@@ -27,6 +37,11 @@ public class input {
             return inputDouble();
         }
     }
+    /**
+     * @description: String input control
+     * @param {}
+     * @return {String}
+     */
     public static String inputString() {
         Scanner sc = new Scanner(System.in);
         try{
@@ -36,6 +51,12 @@ public class input {
             return inputString();
         }
     }
+
+    /**
+     * @description: Int Array input control
+     * @param {}
+     * @return {int[]}
+     */
     public static int[] inputIntArray() {
         Scanner sc = new Scanner(System.in);
         String strIn = sc.nextLine();
@@ -51,6 +72,11 @@ public class input {
         }
         return intArray;
     }
+    /**
+     * @description: Double Array input control
+     * @param {}
+     * @return {double[]}
+     */
     public static double[] inputDoubleArray() {
         Scanner sc = new Scanner(System.in);
         String strIn = sc.nextLine();
@@ -66,6 +92,11 @@ public class input {
         }
         return doubleArray;
     }
+    /**
+     * @description: String Array input control
+     * @param {}
+     * @return {String[]}
+     */
     public static long[] inputLongArray() {
         Scanner sc = new Scanner(System.in);
         String strIn = sc.nextLine();
